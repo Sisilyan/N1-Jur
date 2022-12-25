@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H1 Jur</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2745/2745060.png">
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/2745/2745060.png" class="official-logo">
+        <h1 class="official-name">
+            N1 Jur
+        </h1>
+        <div class="official-menu">
+            <a href="index.html"><h1 class="menu">Գլխավոր</h1></a>
+           <a href="about.html"> <h1 class="menu">Մեր մասին</h1></a>
+            <a href="contact.html"><h1 class="menu">Կապ մեզ հետ</h1></a>
+            <a href="tel: 096150004"><h1 class="menu">+374 96150004</h1></a>
+            <a href="#"><h1 class="change" onchange="Change()" ondblclick="ChangeTwo()">Փոխել</h1></a>
+        </div>
+       </header> 
+       <div class="official-img">
+            <img src="https://wallpapersprinted.com/download/2/background_water-wallpaper-2560x1600.jpg" alt="official-img" class="img1">
+        </div>
+        <div class="box2">
+            <h1 class="box2-name">Մեր Մասին</h1>
+            <p class="box2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum sequi ea impedit veritatis esse placeat excepturi exercitationem enim reiciendis vel nemo ad, velit dignissimos earum ipsam nesciunt hic magnam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eaque eius, nihil incidunt nulla nisi, fugit neque rem inventore deserunt voluptatum iure sint ab, reprehenderit doloremque saepe! Porro, dolorum necessitatibus?
+            </p>
+        </div>
+        <script>
+            let change = document.querySelector(".change")
+            let body = document.querySelector("body")
+
+            change.addEventListener('click' , Change)
+            change.addEventListener('ondbclick' , ChangeTwo)
+            function Change() {
+                body.style.background = 'black'
+            }
+            function ChangeTwo(){
+                body.style.background = 'white'
+            }
+        </script>
+</body>
+</html>

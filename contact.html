@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H1 Jur</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2745/2745060.png">
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/2745/2745060.png" class="official-logo">
+        <h1 class="official-name">
+            N1 Jur
+        </h1>
+        <div class="official-menu">
+            <a href="index.html"><h1 class="menu">Գլխավոր</h1></a>
+           <a href="about.html"> <h1 class="menu">Մեր մասին</h1></a>
+            <a href="contact.html"><h1 class="menu">Կապ մեզ հետ</h1></a>
+            <a href="tel: 096150004"><h1 class="menu">+374 96150004</h1></a>
+            <a href="#"><h1 class="change" onchange="Change()" ondblclick="ChangeTwo()">Փոխել</h1></a>
+        </div>
+       </header> 
+       <div class="official-img">
+            <img src="https://wallpapersprinted.com/download/2/background_water-wallpaper-2560x1600.jpg" alt="official-img" class="img1">
+        </div>
+        <div class="box3">
+            <h1 class="box3-name">կապ մեզ հետ 24/7</h1>
+        <div class="boxik4">
+            <div class="phone">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" class="icon">
+                <h1 class="all-phone">+374 96150004</h1>
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png" class="icon">
+                <h1 class="all-phone">+374 96150004</h1>
+                <img src="https://cdn-icons-png.flaticon.com/512/3128/3128336.png" class="icon">
+                <h1 class="all-phone">+374 96150004</h1>
+            </div>
+        </div>
+        </div>
+        <script>
+            let change = document.querySelector(".change")
+            let body = document.querySelector("body")
+
+            change.addEventListener('click' , Change)
+            change.addEventListener('ondbclick' , ChangeTwo)
+            function Change() {
+                body.style.background = 'black'
+            }
+            function ChangeTwo(){
+                body.style.background = 'white'
+            }
+        </script>
+</body>
+</html>
